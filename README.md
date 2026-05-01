@@ -78,9 +78,8 @@ Keep the shelves full with a built-in mission system.
 
 <p align="center">
   <strong>📦 Need support or custom scripts?</strong><br>
-  <img src="https://img.shields.io/badge/Buy%20Now%20on%20Tebex-%249.49-important?style=for-the-badge&logo=tebex" alt="Buy on Tebex">
   <a href="https://benx.tebex.io/category/scripts">
-    <strong>Visit BenX Development Store</strong>
+    <img src="https://img.shields.io/badge/Buy%20Now%20on%20Tebex-%249.49-important?style=for-the-badge&logo=tebex" alt="Buy on Tebex">
   </a>
 </p>
 
