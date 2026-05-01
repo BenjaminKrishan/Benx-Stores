@@ -1,6 +1,7 @@
-# 🏪 BenX Stores System - Advanced Management
+# 🏪 BenX Stores – Advanced Business & Delivery Ecosystem
 
-> *The ultimate store ownership and management system for QBox servers.*
+> *Elevate your server’s economy with a professional-grade store ownership and interactive delivery mission system. Built on the modern OX stack, BenX Stores offers a seamless, high-performance experience for both owners and customers.
+.*
 
 <p align="center">
   <img src="https://img.shields.io/badge/Framework-QBox-orange?style=for-the-badge" alt="Framework">
