@@ -1,11 +1,11 @@
 # 🏪 BenX Stores System - Advanced Management
 
-> *The ultimate store ownership and management system for QBox and QB-Core servers.*
+> *The ultimate store ownership and management system for QBox servers.*
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Framework-QBox--QBCORE-orange?style=for-the-badge" alt="Framework">
+  <img src="https://img.shields.io/badge/Framework-QBox--orange?style=for-the-badge" alt="Framework">
   <img src="https://img.shields.io/badge/Inventory-Ox--Inventory-blue?style=for-the-badge" alt="Inventory">
-  <img src="https://img.shields.io/badge/Version-1.2.0-green?style=for-the-badge" alt="Version">
+  <img src="https://img.shields.io/badge/Version-1.0-green?style=for-the-badge" alt="Version">
 </p>
 
 ---
