@@ -70,12 +70,6 @@ Keep the shelves full with a built-in mission system.
 
 ---
 
-## 🔄 Recent Updates (v1.2.0)
-- **Fee Limits**: Added `MinExtraFee` and `MaxExtraFee` to protect business accounts.
-- **UX Improvements**: Mission cleanup now triggers immediately if a progress bar is cancelled.
-- **Optimization**: Switched to proximity-based store refreshes to lower server CPU usage.
-- **Property Safety**: Fixed `claimedTime` naming inconsistencies and ensured robust default value fallbacks.
-
 <p align="center">
   <strong>📦 Need support or custom scripts?</strong><br>
   <a href="https://benx.tebex.io/category/scripts">
