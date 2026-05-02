@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/Framework-QBox-orange?style=for-the-badge" alt="Framework">
   <img src="https://img.shields.io/badge/Inventory-Ox--Inventory-blue?style=for-the-badge" alt="Inventory">
   <img src="https://img.shields.io/badge/UI-Ox--Lib-purple?style=for-the-badge" alt="UI">
-  <img src="https://img.shields.io/badge/Version-2.0-red?style=for-the-badge" alt="Version">
+  <img src="https://img.shields.io/badge/Version-1.0-red?style=for-the-badge" alt="Version">
 </p>
 
 ---
