@@ -11,7 +11,7 @@
 
 ---
 
-## ✨ Modernized Features (V2.0)
+## ✨ Modernized Features
 
 ### 🎭 Premium Scaleform Notifications
 Forget generic popups. BenX Stores uses **GTA-style Midsized Scaleforms** for all major business events:
