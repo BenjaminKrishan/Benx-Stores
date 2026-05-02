@@ -1,81 +1,75 @@
-# 🏪 BenX Stores – Advanced Business & Delivery Ecosystem
+# 🏪 BenX Stores – Modern Business & Mission Ecosystem
 
-> *Elevate your server’s economy with a professional-grade store ownership and interactive delivery mission system. Built on the modern OX stack, BenX Stores offers a seamless, high-performance experience for both owners and customers.
-.*
+> **Experience the next generation of FiveM store ownership.** BenX Stores has been completely modernized with a premium GTA-style Scaleform system, advanced mission HUDs, and hardened security. Built for **Qbox** and the **OX Stack**, it offers unparalleled immersion and stability.
 
 <p align="center">
   <img src="https://img.shields.io/badge/Framework-QBox-orange?style=for-the-badge" alt="Framework">
   <img src="https://img.shields.io/badge/Inventory-Ox--Inventory-blue?style=for-the-badge" alt="Inventory">
-  <img src="https://img.shields.io/badge/Version-1.0-green?style=for-the-badge" alt="Version">
+  <img src="https://img.shields.io/badge/UI-Ox--Lib-purple?style=for-the-badge" alt="UI">
+  <img src="https://img.shields.io/badge/Version-2.0-red?style=for-the-badge" alt="Version">
 </p>
 
 ---
 
-### 🛒 Elevate Your Server Economy
-**BenX Stores** is a high-performance, player-driven economy system that allows users to buy, manage, and optimize their own businesses. From stock delivery missions to real-time price customization, this script provides total control to business owners while ensuring server stability with hardened security.
+## ✨ Modernized Features (V2.0)
 
----
+### 🎭 Premium Scaleform Notifications
+Forget generic popups. BenX Stores uses **GTA-style Midsized Scaleforms** for all major business events:
+- **Financials**: Deposit/Withdrawal confirmations with real-time balance updates.
+- **Management**: Visual feedback for price edits, stock additions, and mission creation.
+- **Real Estate**: Immersive "Property Purchased/Sold" celebrations.
 
-## 🚀 Key Features
+### 🚚 Enhanced Mission Ecosystem
+Missions are now more informative and secure:
+- **Detailed Navigation HUD**: Real-time tracking showing **Destination**, **Item Name**, **Quantity**, and **Estimated Reward**.
+- **Model-Based Restrictions**: No more generic vehicle classes. Owners can specify exact vehicle models (e.g., `benson`, `mule`) required for deliveries.
+- **Race-Condition Protection**: Atomic mission claiming logic ensures two players can never claim the same job simultaneously.
+- **Automatic Cleanup**: Blips, HUDs, and GPS routes are automatically managed on disconnect, resource stop, or mission completion.
 
-### 🏢 Comprehensive Management
-Owners can manage their stores via a sleek **ox_lib** interface.
-- **Real-time Balance**: Add or withdraw funds from the business account.
-- **Stock Control**: Add items from your inventory directly to the store shelves.
-- **Price Customization**: Adjust sell prices on the fly without needing a server restart.
-- **Category Organization**: Group items into custom categories (Tools, Weapons, Food, etc.) for a better customer experience.
-
-### 🚚 Dynamic Delivery Missions
-Keep the shelves full with a built-in mission system.
-- **Stock Requests**: Owners create missions with specific quantities and rewards.
-- **Driver Bonuses**: Set an **Extra Delivery Fee** to attract players to fulfill your orders.
-- **Configurable Limits**: Global and per-item limits on `min_request` and `max_request`.
-
-### 🛡️ Hardened Security & Optimization
-- **Race-Condition Protection**: Mission claiming is protected by server-side mutex logic.
-- **Anti-Exploit**: Time-based validation prevents instant mission completion hacks.
-- **Proximity Sync**: Database updates are broadcast only to nearby players to reduce network overhead.
-- **Safe Loading**: Coordinate decoding is protected by `pcall` to prevent server crashes on malformed data.
+### 🛡️ Core Stability & Optimization
+- **Zero Legacy Code**: All deprecated compatibility layers have been removed for a lightweight, performant script.
+- **Centralized Localization**: All player-facing text is now in `Config.Messages` for instant translation.
+- **Database Integrity**: Uses `oxmysql` with careful synchronization between server memory and persistent storage.
 
 ---
 
 ## 🚀 Installation
 
-1. **Prerequisites**: Ensure you have `qb-core`, `ox_inventory`, and `ox_lib` installed.
-2. **Database**: Import the provided `sql.sql` file into your database.
-3. **Download and Extract**: Place the `benx_stores` folder into your `resources` directory.
-4. **Add to Server Config**:
-   ```bash
-   ensure benx_stores
-   ```
+1. **Prerequisites**: Ensure you have `qbx_core`, `ox_inventory`, `ox_lib`, and `oxmysql` installed and running.
+2. **Database**: Import the `sql.sql` file provided in the resource folder.
+3. **Files**: Drag and drop `benx_stores` into your `[resources]` directory.
+4. **Configuration**: Review `config.lua` to set your desired stores, items, and vehicle restrictions.
+5. **Start**: Add `ensure benx_stores` to your `server.cfg`.
 
 ---
 
-## 📋 Commands
+## 📋 Commands & Controls
 
-| Command | Description |
-|---------|-------------|
-| `/cancelmission` | Forces the cancellation of your current active delivery mission. |
+| Action | Control/Command |
+|--------|-----------------|
+| **Browse Shop** | Interact via **Target** (ox_target) |
+| **Manage Business** | Interact via **Target** (Office Area) |
+| **Mission Board** | Interact via **Target** (Shop Counter) |
+| **Cancel Mission** | `/cancelmission` (Available via command or UI) |
 
 ---
 
-## ⚙️ Configuration (`config.lua`)
+## ⚙️ Key Configuration (`config.lua`)
 
-| Key | Default | Description |
+| Key | Example | Description |
 |-----|---------|-------------|
-| `Config.DefaultMaxRequest` | `100` | Max items allowed per delivery request. |
-| `Config.DefaultMinRequest` | `10` | Min items allowed per delivery request. |
-| `Config.DefaultMinExtraFee` | `500` | Lowest bonus allowed for drivers. |
-| `Config.DefaultMaxExtraFee` | `5000` | Highest bonus allowed for drivers. |
-| `Config.VehicleCheck` | `true` | Requires a van/truck for delivery missions. |
+| `Config.AllowedVehicleTypes` | `{'benson', 'mule'}` | List of specific vehicle models allowed for missions. |
+| `Config.MissionCooldown` | `300` | Seconds a player must wait between missions. |
+| `Config.CancelPenalty` | `10` | Percentage of reward deducted if a mission is cancelled. |
+| `Config.Scaleforms` | *(Object)* | Fully customizable visual/audio settings for all notifications. |
 
 ---
 
 <p align="center">
-  <strong>📦 Need support or custom scripts?</strong><br>
-  <a href="https://benx.tebex.io/category/scripts">
-    <img src="https://img.shields.io/badge/Buy%20Now%20on%20Tebex-%2414.49-important?style=for-the-badge&logo=tebex" alt="Buy on Tebex">
+  <strong>📦 Premium FiveM Resources by BenX Development</strong><br>
+  <a href="https://benx.tebex.io/">
+    <img src="https://img.shields.io/badge/Visit%20Tebex%20Store-blue?style=for-the-badge&logo=tebex" alt="Tebex Store">
   </a>
 </p>
 
-*© 2026 Benjamin Krishan - BenX Development. All rights reserved.*
+*© 2026 Benjamin Krishan - BenX Development. Modernized for performance, immersion, and stability.*
